@@ -25,19 +25,22 @@ body{
     background-color: white;
     margin: 0 auto;
 }
-
+.icons{
+    color: #B0B0B0;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+}
+/*-----------------------------------------------------*/
 .header-app{
     background-color: #EAEAEA;
     width: 100%;
     margin: 0 auto;
 }
 
-
-
 .header-app .my-profile{
     border-right: 1px solid rgb(189, 189, 189);
-    width: 35%;
-    height: 100%;
+    width: 60%;
 }
 .header-app .my-profile img{
     width: 15%;
@@ -45,20 +48,22 @@ body{
     border-radius: 50%;  
 }
 
-.header-app .icons{
-    color: #B0B0B0;
-    font-size: 22px;
-    padding: 10px;
-}
-
 .header-app .icons i{
-    margin-left: 6px;
+    margin-left: 15px;
+    margin-right: 5px;
+    
 }
+/*----------------------------------------------------------------*/
 
+.chat-profile{
+    width: 100%;
+}
 .chat-profile img{
-    width: 11%;
+    width: 65px;
     padding: 10px;
     border-radius: 50%; 
 }
+
+
 
 
