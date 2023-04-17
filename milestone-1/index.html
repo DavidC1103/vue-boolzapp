@@ -34,7 +34,6 @@
             <!--PROFILE CHAT-->
             <div class="col-8 dc-background">
                 <div class="chat-profile d-flex justify-content-between">
-        
                     <div class="profile-chat d-flex ">
                         <img src="img/avatar_8.jpg" alt="">
                         <div class="mt-2">
@@ -42,13 +41,13 @@
                             <div class="dc-text"><strong> Ultimo accesso oggi alle 16:35</strong></div>
                         </div>
                     </div>
-        
+                    
                     <div class="icons mt-1">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-solid fa-paperclip"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
-
+                    
                 </div>
             </div>
             <!--ADV-->
@@ -65,67 +64,21 @@
                     <div class="input-group">
                         <span class=" dc-border input-group-text rounded-0 bg-white">&#128269;</span>
                         <input type="text" class=" dc-border rounded-0 form-control" placeholder="Cerca o inizia una nuova chat" >
-                      </div>
+                    </div>
                 </div>
                 <!--CONTACTS-->
-                <div class="contacts overflow-auto">
-                    <div class="d-flex ">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Michele</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
+                <div class="contacts">
+                    <div v-for="contact in contacts">
+                        <div class="d-flex ">
+                            <img :src="contact.avatar" alt="">
+                            <div class="mt-2">
+                                <span><strong>{{contact.name}}</strong></span>
+                                <div class="dc-text">Ultimo messaggio inviato</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex dc-border">
-                        <img src="img/avatar_2.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Zio pino</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                    <div class="d-flex dc-border">
-                        <img src="img/avatar_3.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Ciccio</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                    <div class="d-flex dc-border">
-                        <img src="img/avatar_4.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Samu</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                    <div class="d-flex dc-border">
-                        <img src="img/avatar_5.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Andrea</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                    <div class="d-flex dc-border">
-                        <img src="img/avatar_6.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Simona</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                    <div class="d-flex dc-border">
-                        <img src="img/avatar_7.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Peppe</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                    <div class="d-flex">
-                        <img src="img/avatar_8.jpg" alt="">
-                        <div class="mt-2">
-                            <span><strong>Sofia</strong></span>
-                            <div class="dc-text">Ultimo messaggio inviato</div>
-                        </div>
-                    </div>
-                </div>
+                </div>   
+               
 
             </div>
             <!--CHAT-->
@@ -156,9 +109,6 @@
 
                 </div>
             </div>
-            
-
-            
         </div>
 
         
@@ -222,6 +172,6 @@
 
 
     
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>
