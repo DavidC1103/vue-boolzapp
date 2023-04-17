@@ -41,8 +41,8 @@ i{
 .dc-container{
     width: 80%;
     height: 96%;
-    background-color: white;
     margin: 0 auto;
+    background-color: white;
 }
 .icons{
     color: #B0B0B0;
@@ -88,19 +88,34 @@ i{
     width: 100%;
     height: 100%;
     background-image: url(../img/mine.jpg);
+    position: relative;
 }
 
 .chat .sent{
     background-color:#D5F9BA ;
     padding: 15px;
-    border-radius: 20%;
-    width: 50%;
+    border-radius: 15px;
+    width: 30%;
+    position: absolute;
+    top: 40px;
+    right: 80px;
 }
 
 .chat .recive{
     background-color: white ;
     padding: 15px;
+    width: 30%;
+    border-radius: 15px;
+    position: absolute;
+    top: 110px;
+    left: 80px;
 }
 
+.chat .hour {
+    color: #9B9B9D;
+    font-size: 11px;
+    top: 100px;
+    
+}
 
 
