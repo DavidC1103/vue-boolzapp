@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #009688 13vh,
+        #D8DBD3 13vh 100vh
+    );
+    
+}
+
+.dc-text{
+    color: #9B9B9D;
+    font-size: 14px;
+}
+
+.dc-container{
+    width: 80%;
+    height: 96%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.header-app{
+    background-color: #EAEAEA;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.header-app .my-profile{
+    border-right: 1px solid rgb(189, 189, 189);
+    width: 35%;
+    height: 100%;
+}
+.header-app .my-profile img{
+    width: 15%;
+    padding: 10px;
+    border-radius: 50%;  
+}
+
+.header-app .icons{
+    color: #B0B0B0;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.header-app .icons i{
+    margin-left: 6px;
+}
+
+.chat-profile img{
+    width: 11%;
+    padding: 10px;
+    border-radius: 50%; 
+}
+
+
