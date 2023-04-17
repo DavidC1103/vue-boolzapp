@@ -5,7 +5,6 @@
 }
 
 body{
-    height: 100vh;
     background: linear-gradient(
         to bottom,
         #009688 13vh,
@@ -28,21 +27,25 @@ i{
 .dc-background{
     background-color:#EAEAEA;
 }
+.dc-bg-bottom{
+    background-color:#F3EEEA ;
+}
 .dc-text{
     color: #9B9B9D;
     font-size: 14px;
 }
-
-.text-decoration{
-    text-decoration: underline;
-
+.dc-input{
+    padding: 10px;
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
 }
 
 .dc-container{
     width: 80%;
-    height: 96%;
     margin: 0 auto;
     background-color: white;
+
 }
 .icons{
     color: #B0B0B0;
@@ -61,6 +64,10 @@ i{
 .notifiche{
     background-color:#8EDAFC ;
     padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .notifiche i{
@@ -80,6 +87,10 @@ i{
 }
 /*--------------------*/
 
+.contacts{
+    height: 640px;
+    overflow: auto;
+}
 .contacts img{
     width: 75px;
 }
@@ -88,7 +99,7 @@ i{
     width: 100%;
     height: 100%;
     background-image: url(../img/mine.jpg);
-    position: relative;
+
 }
 
 .chat .sent{
@@ -96,9 +107,8 @@ i{
     padding: 15px;
     border-radius: 15px;
     width: 30%;
-    position: absolute;
-    top: 40px;
-    right: 80px;
+    min-width: 200px;
+    align-self: flex-end ;
 }
 
 .chat .recive{
@@ -106,16 +116,14 @@ i{
     padding: 15px;
     width: 30%;
     border-radius: 15px;
-    position: absolute;
-    top: 110px;
-    left: 80px;
+    min-width: 200px;
 }
 
 .chat .hour {
     color: #9B9B9D;
     font-size: 11px;
-    top: 100px;
-    
 }
+/*------------------------*/
+
 
 

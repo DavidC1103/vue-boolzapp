@@ -13,6 +13,7 @@
 <body>
     <div id="app" class="dc-container  my-4 ">
         <div class="row g-0">
+            <!--MY PROFILE-->
             <div class="col-4">
                 <div class="header-app dc-background">
                     <div class="my-profile d-flex justify-content-between">
@@ -30,6 +31,7 @@
                     </div>
                 </div>
             </div>
+            <!--PROFILE CHAT-->
             <div class="col-8 dc-background">
                 <div class="chat-profile d-flex justify-content-between">
         
@@ -49,6 +51,7 @@
 
                 </div>
             </div>
+            <!--ADV-->
             <div class="col-4">
                 <div class="notifiche d-flex">
                     <i class="fa-regular fa-bell-slash"></i>
@@ -57,12 +60,14 @@
                         <a class="dc-text" href="">Attiva notifiche desktop</a>
                     </div>
                 </div>
+                <!--INPUT CONTACTS-->
                 <div class="search-contact py-2 px-1">
                     <div class="input-group">
                         <span class=" dc-border input-group-text rounded-0 bg-white">&#128269;</span>
-                        <input type="text" class=" dc-border rounded-0 form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class=" dc-border rounded-0 form-control" placeholder="Cerca o inizia una nuova chat" >
                       </div>
                 </div>
+                <!--CONTACTS-->
                 <div class="contacts overflow-auto">
                     <div class="d-flex ">
                         <img src="img/avatar_1.jpg" alt="">
@@ -120,22 +125,40 @@
                             <div class="dc-text">Ultimo messaggio inviato</div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
+            <!--CHAT-->
             <div class="col-8">
-                <div class="chat p-3">
-                    <div class="sent">
+                <div class="chat p-3 d-flex flex-column">
+                    <div class="sent mb-2">
                         <span>Ciao!</span>
-                        <span class="hour text-end">15:35</span>
+                        <span class="hour text-end"></span>
                     </div>
-                    <div class="recive">
+                    <div class="recive mb-2">
                         <span>Oi</span>
                     </div>
                     
                 </div>
-    
             </div>
+            <!--INPUT CHAT-->
+            <div class="col-8 offset-4 g-0">
+                <div class="row dc-bg-bottom p-3 g-0">
+                    <div class="col-2 text-center fs-4">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" placeholder="Scrivi un messaggio" class="dc-input">
+                    </div>
+                    <div class="col-2 text-center fs-4 ">
+                        <i class="fa-solid fa-microphone"></i>        
+                    </div>
+
+                </div>
+            </div>
+            
+
+            
         </div>
 
         
