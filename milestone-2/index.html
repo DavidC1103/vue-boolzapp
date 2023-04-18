@@ -85,16 +85,9 @@
 
             </div>
             <!--CHAT-->
-            <div class="col-8">
-                <div class="chat p-3 d-flex flex-column">
-                    <div class="sent mb-2">
-                        <span>Ciao!</span>
-                        <span class="hour text-end"></span>
-                    </div>
-                    <div class="recive mb-2">
-                        <span>Oi</span>
-                    </div>
-                    
+            <div class="col-8 main-chat">
+                <div class="chat p-3 d-flex flex-column mt-2" v-for="(msg, index) in contacts[counter].messages"  :key="index">
+                        <span :class="msg.status" class="chat">{{msg.message}}</span>
                 </div>
             </div>
             <!--INPUT CHAT-->
@@ -104,7 +97,8 @@
                         <i class="fa-regular fa-face-smile"></i>
                     </div>
                     <div class="col-8">
-                        <input type="text" placeholder="Scrivi un messaggio" class="dc-input">
+                        <input type="text" placeholder="Scrivi un messaggio" class="dc-input"
+                        >
                     </div>
                     <div class="col-2 text-center fs-4 ">
                         <i class="fa-solid fa-microphone"></i>        
@@ -174,7 +168,7 @@
 
 
 
-    
-    <script type="module" src="js/script.js"></script>
+    <script src="js/dbContacts.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

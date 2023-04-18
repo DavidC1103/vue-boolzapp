@@ -1,20 +1,19 @@
 const {createApp} = Vue;
-import contacts from './dbContacts.js'
 
-
-createApp({
+console.log(contacts);
+const abc = createApp({
     data(){
         return{
-            contacts,
+            contacts: contacts,
             counter : 0,
-
+            myText : ''
         }
     },
-
 
     methods:{
         profileView(index){
             this.counter = index
-        }
+        },
+    
     }
 }).mount('#app')
