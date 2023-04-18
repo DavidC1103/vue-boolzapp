@@ -89,9 +89,14 @@ i{
 
 .contacts{
     height: 640px;
+    cursor: pointer;
 }
 .contacts img{
     width: 75px;
+}
+
+.single:hover{
+    background-color: #b4b4b490;
 }
 /*---------------------------------------------*/
 .chat{
@@ -123,6 +128,7 @@ i{
     font-size: 11px;
 }
 /*------------------------*/
+
 
 
 

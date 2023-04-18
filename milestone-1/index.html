@@ -67,11 +67,11 @@
                     </div>
                 </div>
                 <!--CONTACTS-->
-                <div class="contacts">
-                    <div v-for="contact in contacts">
-                        <div class="d-flex ">
+                <div class="contacts single">
+                    <div v-for="contact in contacts" class="single">
+                        <div class="d-flex single">
                             <img :src="contact.avatar" alt="">
-                            <div class="mt-2">
+                            <div class="mt-2 single">
                                 <span><strong>{{contact.name}}</strong></span>
                                 <div class="dc-text">Ultimo messaggio inviato</div>
                             </div>
