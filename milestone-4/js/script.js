@@ -1,12 +1,13 @@
 const {createApp} = Vue;
 
-console.log(contacts);
-const abc = createApp({
+
+createApp({
     data(){
         return{
             contacts: contacts,
             counter : 0,
-            myText : ''
+            myText : '',
+            findUser : ''
         }
     },
 
@@ -19,7 +20,8 @@ const abc = createApp({
             if(this.myText.length > 0){
                 const nuovoMessaggio = {
                     message : this.myText,
-                    status : 'sent'
+                    status : 'sent',
+                    date: '12:05'
                 }
                 this.contacts[this.counter].messages.push(nuovoMessaggio)
                 this.myText = ''
@@ -31,9 +33,17 @@ const abc = createApp({
                 const risp = {
                     message : 'Ok',
                     status: 'received',
+                    date: '12.05'
                 }
                 this.contacts[this.counter].messages.push(risp)
             },1000)
+        },
+        
+        findContacts(){
+            this.contacts.forEach((contact) => {
+             contact.visible = contact.name.toLowerCase().includes(this.findUser.toLowerCase())
+              console.log(this.findContacts);
+            })
         }
     }
 }).mount('#app')

@@ -63,20 +63,24 @@
                 <div class="search-contact py-2 px-1">
                     <div class="input-group">
                         <span class=" dc-border input-group-text rounded-0 bg-white">&#128269;</span>
-                        <input type="text" class=" dc-border rounded-0 form-control" placeholder="Cerca o inizia una nuova chat" >
+                        <input
+                         @keyup="findContacts"
+                          v-model.trim="findUser"
+                           type="text" class=" dc-border rounded-0 form-control" placeholder="Cerca o inizia una nuova chat" >
                     </div>
                 </div>
                 <!--CONTACTS-->
                 <div class="contacts">
                     <div
                      v-for="(contact, index) in contacts"
-                     @click="profileView(index)"
-                     >
-                        <div class="d-flex single ">
-                            <img :src="contact.avatar" alt="">
-                            <div class="mt-2">
-                                <span><strong>{{contact.name}}</strong></span>
-                                <div class="dc-text">Ultimo messaggio inviato</div>
+                     @click="profileView(index)">
+                        <div v-if="contact.visible">
+                            <div class="d-flex single ">
+                                <img :src="contact.avatar" alt="">
+                                <div class="mt-2">
+                                    <span><strong>{{contact.name}}</strong></span>
+                                    <div class="dc-text">Ultimo messaggio inviato</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -91,7 +95,7 @@
                     <div class=" p-3 d-flex flex-column mt-2" v-for="(msg, index) in contacts[counter].messages">
 
                         <span :class="msg.status" class="chat">{{msg.message}} 
-                            <span class="hour">13.05</span>
+                            <span class="hour">{{msg.date}}</span>
                         </span>
                     </div>
                 </div>
