@@ -47,6 +47,7 @@ i{
     width: 80%;
     margin: 0 auto;
     background-color: white;
+    height: 910px;
 
 }
 .icons{
@@ -103,7 +104,8 @@ i{
 /*---------------------------------------------*/
 .main-chat {
     background: url('../img/mine.jpg');
-}
+    height: 769px;
+}   
 .chat{
     width: 100%;
     position: relative;
@@ -115,7 +117,7 @@ i{
     background-color:#D5F9BA ;
     padding: 15px;
     border-radius: 15px;
-    width: 30%;
+    width: 20%;
     min-width: 200px;
     align-self: flex-end ;
     word-wrap: break-word;
@@ -125,7 +127,7 @@ i{
 .chat.received{
     background-color: white ;
     padding: 15px;
-    width: 30%;
+    width: 20%;
     border-radius: 15px;
     min-width: 200px;
     word-wrap: break-word;

@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="app" class="dc-container  my-4 ">
-        <div class="row g-0">
+        <div class="row g-0 ">
             <!--MY PROFILE-->
             <div class="col-4">
                 <div class="header-app dc-background">
@@ -74,7 +74,7 @@
                     <div
                      v-for="(contact, index) in contacts"
                      @click="profileView(index)">
-                        <div v-if="contact.visible">
+                         <div v-if="contact.visible">
                             <div class="d-flex single ">
                                 <img :src="contact.avatar" alt="">
                                 <div class="mt-2">
@@ -92,7 +92,7 @@
             <div class="col-8 main-chat">
                 <div class="chat">
 
-                    <div class=" p-3 d-flex flex-column mt-2" v-for="(msg, index) in contacts[counter].messages">
+                    <div class=" p-3 d-flex flex-column mt-2 mx-5" v-for="(msg, index) in contacts[counter].messages">
 
                         <span :class="msg.status" class="chat">{{msg.message}} 
                             <span class="hour">{{msg.date}}</span>
